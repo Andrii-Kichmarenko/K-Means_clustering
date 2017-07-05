@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="812.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Button fx:id="startButton" disable="true" layoutX="120.0" layoutY="272.0" mnemonicParsing="false" onMouseClicked="#startButtonAction" prefHeight="39.0" prefWidth="120.0" text="Start" />
+      <TextField fx:id="groupsNumberTextField" layoutX="186.0" layoutY="201.0" prefHeight="39.0" prefWidth="54.0" text="4" />
+      <TextField fx:id="pointsNumberTextField" layoutX="186.0" layoutY="133.0" prefHeight="39.0" prefWidth="54.0" text="800" />
+      <TextField fx:id="groupRadiusTextField" layoutX="186.0" layoutY="67.0" prefHeight="39.0" prefWidth="54.0" text="200" />
+      <Label layoutX="108.0" layoutY="73.0" text="Radius">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="139.0" text="Points">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="207.0" text="Groups (max. 5)">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Pane fx:id="plotPane" layoutX="287.0" layoutY="8.0" onMouseClicked="#mouseClickAction" prefHeight="667.0" prefWidth="514.0" style="-fx-background-color: white;" />
+      <Button fx:id="clearButton" disable="true" layoutX="120.0" layoutY="412.0" mnemonicParsing="false" onMouseClicked="#clearButtonAction" prefHeight="39.0" prefWidth="120.0" text="Clear" />
+      <Button fx:id="nextButton" disable="true" layoutX="120.0" layoutY="341.0" mnemonicParsing="false" onMouseClicked="#nextButtonAction" prefHeight="39.0" prefWidth="120.0" text="Next" />
+   </children>
+</AnchorPane>
